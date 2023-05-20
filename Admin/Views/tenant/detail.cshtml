@@ -1,0 +1,253 @@
+
+					<!--This code generated from Deliveries Powered by Mahat, Source Machine : 15.206.208.9 , Build Number : Build 14092021 #2021-09-014(Updated on 29102021 12:49) on 05/19/2023 09:16:59 -->
+					@using Microsoft.AspNetCore.Http
+					@inject IHttpContextAccessor HttpContextAccessor
+					@model englishtotamil.Models.tenantModel
+					@{
+					ViewData["Title"] = "tenant";
+					Layout = "~/Views/Shared/_Layout.cshtml";
+					}
+
+					<div class="">
+					     
+					<div class="">
+
+					      <div id="cma_printableArea">
+	
+                            <div class="row printablerow"> 
+                             
+                            <div class="col-sm-4 col-xs-12 p-2 businessname_craftmyapp_viewcontainer">
+								<div>
+									<div class="form-group form-group--float-above my-3" > 
+										<label>Business  Name</label><br>
+										<span class="auto_cls_businessname"></span>
+										<i class="form-group__bar" ></i>
+									</div>
+								</div>
+							</div>
+<div class="col-sm-4 col-xs-12 p-2 businessemail_craftmyapp_viewcontainer">
+								<div>
+									<div class="form-group form-group--float-above my-3" > 
+										<label>Business  Email</label><br>
+										<span class="auto_cls_businessemail"></span>
+										<i class="form-group__bar" ></i>
+									</div>
+								</div>
+							</div>
+<div class="col-sm-4 col-xs-12 p-2 businessphone_craftmyapp_viewcontainer">
+								<div>
+									<div class="form-group form-group--float-above my-3" > 
+										<label>Business  Phone</label><br>
+										<span class="auto_cls_businessphone"></span>
+										<i class="form-group__bar" ></i>
+									</div>
+								</div>
+							</div>
+<div class="col-sm-4 col-xs-12 p-2 businesswebsite_craftmyapp_viewcontainer">
+								<div>
+									<div class="form-group form-group--float-above my-3" > 
+										<label>Business  Website</label><br>
+										<span class="auto_cls_businesswebsite"></span>
+										<i class="form-group__bar" ></i>
+									</div>
+								</div>
+							</div>
+<div class="col-sm-4 col-xs-12 p-2 organizationlogo_craftmyapp_viewcontainer">
+								<div>
+									<div class="form-group form-group--float-above my-3" > 
+										<label>Organization  Logo</label><br>
+										<span class="auto_cls_organizationlogo"></span>
+										<i class="form-group__bar" ></i>
+									</div>
+								</div>
+							</div>
+<div class="col-sm-4 col-xs-12 p-2 numberofemployees_craftmyapp_viewcontainer">
+								<div>
+									<div class="form-group form-group--float-above my-3" > 
+										<label>Number of  Employees</label><br>
+										<span class="auto_cls_numberofemployees"></span>
+										<i class="form-group__bar" ></i>
+									</div>
+								</div>
+							</div>
+ 
+				<div class="col-sm-12 col-xs-12 mt-3"><!--form_group_div_block-->
+					<div class="card card-blue card-section cma_section_band">
+							<div class="card-head">
+								<header>Address</header>
+							</div>
+							<div class="card-body card-container-Padding-NoShadow">
+								<div class="row">
+										<div class="col-sm-4 col-xs-12 p-2 addressline1_craftmyapp_viewcontainer">
+								<div>
+									<div class="form-group form-group--float-above my-3" > 
+										<label>Address Line1</label><br>
+										<span class="auto_cls_addressline1"></span>
+										<i class="form-group__bar" ></i>
+									</div>
+								</div>
+							</div>
+<div class="col-sm-4 col-xs-12 p-2 addressline2_craftmyapp_viewcontainer">
+								<div>
+									<div class="form-group form-group--float-above my-3" > 
+										<label>Address Line2</label><br>
+										<span class="auto_cls_addressline2"></span>
+										<i class="form-group__bar" ></i>
+									</div>
+								</div>
+							</div>
+<div class="col-sm-4 col-xs-12 p-2 city_craftmyapp_viewcontainer">
+								<div>
+									<div class="form-group form-group--float-above my-3" > 
+										<label>City</label><br>
+										<span class="auto_cls_city"></span>
+										<i class="form-group__bar" ></i>
+									</div>
+								</div>
+							</div>
+<div class="col-sm-4 col-xs-12 p-2 state_craftmyapp_viewcontainer">
+								<div>
+									<div class="form-group form-group--float-above my-3" > 
+										<label>State</label><br>
+										<span class="auto_cls_state"></span>
+										<i class="form-group__bar" ></i>
+									</div>
+								</div>
+							</div>
+<div class="col-sm-4 col-xs-12 p-2 zip_craftmyapp_viewcontainer">
+								<div>
+									<div class="form-group form-group--float-above my-3" > 
+										<label>Zip</label><br>
+										<span class="auto_cls_zip"></span>
+										<i class="form-group__bar" ></i>
+									</div>
+								</div>
+							</div>
+<div class="col-sm-4 col-xs-12 p-2 country_craftmyapp_viewcontainer">
+								<div>
+									<div class="form-group form-group--float-above my-3" > 
+										<label>Country</label><br>
+										<span class="auto_cls_country"></span>
+										<i class="form-group__bar" ></i>
+									</div>
+								</div>
+							</div>
+
+
+								</div>
+							</div>
+					</div>
+				</div><!--form_group_div_block-->
+			 
+
+											 
+											 
+                            </div>
+                         </div>
+						 <div class="row">
+					            <div class="col-sm-12 col-xs-12">
+					                <input type="button" class="btn cma_primary_button  waves-effect pull-right" onclick="printDiv('cma_printableArea')" value="Print" />
+
+                                    <button type="button" id="btnSubmit" onclick="window.history.back()" class="btn btn-secondary cma_cancel_button waves-effect">Back</button>            
+
+					            </div>
+					        </div>					
+  
+                    </div>
+					
+                    <link href="~/components/jquery-colorbox/colorbox.css" rel="stylesheet" />
+                    <script src="~/components/jquery-colorbox/jquery.colorbox.js"></script>
+                    <link href="~/css/GallaryContent/style.css" rel="stylesheet" />
+                    <link href="~/components/starrr/starrr.css" rel="stylesheet" />
+					 
+					<script type="text/javascript">
+                     function printDiv(divName) {
+                        var printContents = document.getElementById(divName).innerHTML;
+                        var originalContents = document.body.innerHTML;
+
+                        document.body.innerHTML = printContents;
+
+                        window.print();
+
+                        document.body.innerHTML = originalContents;
+                    }
+                    function fill_tenant_view_data(){
+
+                       var  tenantid = getUrlVars()["id"];
+                                            $("#viewDetails_Auto").show()
+											$(".auto_checker_action").hide()
+                                                $.ajax({
+												url: '@Url.Action("getById_sp_all_tenant")',
+												dataType: 'json',
+												data:{tenantid: tenantid },
+												success: function(data) {
+
+												var obj=data.Table[0]
+													for (var key in obj) {
+													
+															$(".auto_cls_"+key).html(obj[key]);
+														 	
+															if(key=='organizationlogo'){
+																			$('.auto_cls_organizationlogo').empty()
+                                                                            if(obj[key] !=null)  {            
+                                                                          
+                                                                            var uploaded_organizationlogo = obj[key].split('|');
+                                                                            var iterate = 0;
+                                                                            for (var i = 0; i < uploaded_organizationlogo.length; i++) {
+
+
+	                                                                            if (uploaded_organizationlogo[i] != "") {
+		                                                                            iterate = iterate + 1;
+		                                                                            if (iterate == 1)
+			                                                                            $('.auto_cls_organizationlogo').append('<a href=' + uploaded_organizationlogo[i] + ' class="imgorganizationlogo auto_clr_organizationlogo"><img  src=' + uploaded_organizationlogo[i] + ' width="100px" /></a>')
+		                                                                            else
+
+			                                                                            $('.auto_cls_organizationlogo').append('<div style="display:none"> <a href=' + uploaded_organizationlogo[i] + ' class="imgorganizationlogo auto_clr_organizationlogo"><img  src=' + uploaded_organizationlogo[i] + ' width="100px" /></a></div>')
+		 
+	                                                                            }
+
+
+                                                                            }
+
+                                                                            $('body').on('click', 'a.imgorganizationlogo', function (e) {
+                                                                            e.preventDefault();
+                                                                            $('.imgorganizationlogo').colorbox({ rel: '.imgorganizationlogo', width: "90%", height: "80%" });
+                                                                            $.colorbox({ open: true });
+                                                                            });
+
+
+
+
+                                                                                    }
+
+
+																	}
+
+
+													}
+												}
+
+												})
+
+                   }
+                   
+
+					$(document).ready(function () {
+
+
+					fill_tenant_view_data()
+
+
+					var Actions=getAutho("tenant","list")
+					if(Actions == undefined){
+					window.location = "@Url.Action("RoleAuthorizationFailed", "users")"
+					}
+
+
+
+
+					});
+					 
+					</script>
+					 
+					

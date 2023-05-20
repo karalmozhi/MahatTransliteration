@@ -1,0 +1,116 @@
+server {
+				listen       80;
+				server_name  sandbox46.craftmyapp.in;
+				location /englishtotamil/englishtotamilWebApi/{
+										proxy_pass "http://localhost:12371/";
+										proxy_http_version 1.1;
+										proxy_set_header Upgrade $http_upgrade;
+										proxy_set_header Connection keep-alive;
+										proxy_set_header Host $http_host;
+										proxy_cache_bypass $http_upgrade;
+										}
+location /englishtotamil/Admin/{
+										proxy_pass "http://localhost:12369/";
+										proxy_http_version 1.1;
+										proxy_set_header Upgrade $http_upgrade;
+										proxy_set_header Connection keep-alive;
+										proxy_set_header Host $http_host;
+										proxy_cache_bypass $http_upgrade;
+										}
+location /englishtotamil/Client/{
+										proxy_pass "http://localhost:12370/";
+										proxy_http_version 1.1;
+										proxy_set_header Upgrade $http_upgrade;
+										proxy_set_header Connection keep-alive;
+										proxy_set_header Host $http_host;
+										proxy_cache_bypass $http_upgrade;
+										}
+location /Timesheet3/{
+									proxy_pass "http://localhost:12151/";
+									proxy_http_version 1.1;
+									proxy_set_header Upgrade $http_upgrade;
+									proxy_set_header Connection keep-alive;
+									proxy_set_header Host $http_host;
+									proxy_cache_bypass $http_upgrade;
+									}
+location /Transliterate/Admin/{
+									proxy_pass "http://localhost:12282/";
+									proxy_http_version 1.1;
+									proxy_set_header Upgrade $http_upgrade;
+									proxy_set_header Connection keep-alive;
+									proxy_set_header Host $http_host;
+									proxy_cache_bypass $http_upgrade;
+									}
+location /Transliterate/TransliterateWebApi/{
+									proxy_pass "http://localhost:12284/";
+									proxy_http_version 1.1;
+									proxy_set_header Upgrade $http_upgrade;
+									proxy_set_header Connection keep-alive;
+									proxy_set_header Host $http_host;
+									proxy_cache_bypass $http_upgrade;
+									}
+location /Transliterate/Client/{
+									proxy_pass "http://localhost:12283/";
+									proxy_http_version 1.1;
+									proxy_set_header Upgrade $http_upgrade;
+									proxy_set_header Connection keep-alive;
+									proxy_set_header Host $http_host;
+									proxy_cache_bypass $http_upgrade;
+									}
+location /Converting/Admin/{
+									proxy_pass "http://localhost:12351/";
+									proxy_http_version 1.1;
+									proxy_set_header Upgrade $http_upgrade;
+									proxy_set_header Connection keep-alive;
+									proxy_set_header Host $http_host;
+									proxy_cache_bypass $http_upgrade;
+									}
+location /Converting/ConvertingWebApi/{
+									proxy_pass "http://localhost:12353/";
+									proxy_http_version 1.1;
+									proxy_set_header Upgrade $http_upgrade;
+									proxy_set_header Connection keep-alive;
+									proxy_set_header Host $http_host;
+									proxy_cache_bypass $http_upgrade;
+									}
+location /Converting/Client/{
+									proxy_pass "http://localhost:12352/";
+									proxy_http_version 1.1;
+									proxy_set_header Upgrade $http_upgrade;
+									proxy_set_header Connection keep-alive;
+									proxy_set_header Host $http_host;
+									proxy_cache_bypass $http_upgrade;
+									}
+location /TextConversion/Admin/{
+									proxy_pass "http://localhost:12357/";
+									proxy_http_version 1.1;
+									proxy_set_header Upgrade $http_upgrade;
+									proxy_set_header Connection keep-alive;
+									proxy_set_header Host $http_host;
+									proxy_cache_bypass $http_upgrade;
+									}
+location /TextConversion/TextConversionWebApi/{
+									proxy_pass "http://localhost:12359/";
+									proxy_http_version 1.1;
+									proxy_set_header Upgrade $http_upgrade;
+									proxy_set_header Connection keep-alive;
+									proxy_set_header Host $http_host;
+									proxy_cache_bypass $http_upgrade;
+									}
+location /TextConversion/Client/{
+									proxy_pass "http://localhost:12358/";
+									proxy_http_version 1.1;
+									proxy_set_header Upgrade $http_upgrade;
+									proxy_set_header Connection keep-alive;
+									proxy_set_header Host $http_host;
+									proxy_cache_bypass $http_upgrade;
+									}
+
+
+					listen 443 ssl; # managed by Certbot
+ ssl_certificate /etc/letsencrypt/live/craftmyapp.in/fullchain.pem; # managed by Certbot
+
+ ssl_certificate_key /etc/letsencrypt/live/craftmyapp.in/privkey.pem; # managed by Certbot
+ include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+ ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+				}

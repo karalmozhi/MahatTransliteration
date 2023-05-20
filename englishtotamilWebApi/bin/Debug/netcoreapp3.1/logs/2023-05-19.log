@@ -1,0 +1,28 @@
+2023-05-19 15:06:13.3511|FATAL|Microsoft.AspNetCore.Hosting.WebHost||Application startup exception|BuildApplication at offset 377 in file:line:column <filename unknown>:0:0
+ApplicationError at offset 89 in file:line:column <filename unknown>:0:0
+ApplicationError at offset 200 in file:line:column <filename unknown>:0:0
+
+2023-05-19 15:08:15.3708|FATAL|Microsoft.AspNetCore.Hosting.WebHost||Application startup exception|BuildApplication at offset 377 in file:line:column <filename unknown>:0:0
+ApplicationError at offset 89 in file:line:column <filename unknown>:0:0
+ApplicationError at offset 200 in file:line:column <filename unknown>:0:0
+
+2023-05-19 15:09:58.9602|FATAL|Microsoft.AspNetCore.Hosting.WebHost||Application startup exception|BuildApplication at offset 377 in file:line:column <filename unknown>:0:0
+ApplicationError at offset 89 in file:line:column <filename unknown>:0:0
+ApplicationError at offset 200 in file:line:column <filename unknown>:0:0
+
+2023-05-19 15:12:24.2087|FATAL|Microsoft.AspNetCore.Hosting.WebHost||Application startup exception|BuildApplication at offset 377 in file:line:column <filename unknown>:0:0
+ApplicationError at offset 89 in file:line:column <filename unknown>:0:0
+ApplicationError at offset 200 in file:line:column <filename unknown>:0:0
+
+2023-05-19 15:14:19.7403|FATAL|Microsoft.AspNetCore.Hosting.WebHost||Application startup exception|BuildApplication at offset 377 in file:line:column <filename unknown>:0:0
+ApplicationError at offset 89 in file:line:column <filename unknown>:0:0
+ApplicationError at offset 200 in file:line:column <filename unknown>:0:0
+
+2023-05-19 15:16:32.8199|FATAL|Microsoft.AspNetCore.Hosting.WebHost||Application startup exception|BuildApplication at offset 377 in file:line:column <filename unknown>:0:0
+ApplicationError at offset 89 in file:line:column <filename unknown>:0:0
+ApplicationError at offset 200 in file:line:column <filename unknown>:0:0
+
+2023-05-19 15:17:56.3544|FATAL|Microsoft.AspNetCore.Hosting.WebHost||Application startup exception|BuildApplication at offset 377 in file:line:column <filename unknown>:0:0
+ApplicationError at offset 89 in file:line:column <filename unknown>:0:0
+ApplicationError at offset 200 in file:line:column <filename unknown>:0:0
+

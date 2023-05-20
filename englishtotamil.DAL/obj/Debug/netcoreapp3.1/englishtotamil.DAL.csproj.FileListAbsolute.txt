@@ -1,0 +1,13 @@
+C:\Users\karal\Downloads\webapp_englishtotamil\englishtotamil.DAL\bin\Debug\netcoreapp3.1\englishtotamil.DAL.deps.json
+C:\Users\karal\Downloads\webapp_englishtotamil\englishtotamil.DAL\bin\Debug\netcoreapp3.1\englishtotamil.DAL.dll
+C:\Users\karal\Downloads\webapp_englishtotamil\englishtotamil.DAL\bin\Debug\netcoreapp3.1\englishtotamil.DAL.pdb
+C:\Users\karal\Downloads\webapp_englishtotamil\englishtotamil.DAL\bin\Debug\netcoreapp3.1\englishtotamil.Models.dll
+C:\Users\karal\Downloads\webapp_englishtotamil\englishtotamil.DAL\bin\Debug\netcoreapp3.1\englishtotamil.Models.pdb
+C:\Users\karal\Downloads\webapp_englishtotamil\englishtotamil.DAL\obj\Debug\netcoreapp3.1\englishtotamil.DAL.csproj.AssemblyReference.cache
+C:\Users\karal\Downloads\webapp_englishtotamil\englishtotamil.DAL\obj\Debug\netcoreapp3.1\englishtotamil.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\karal\Downloads\webapp_englishtotamil\englishtotamil.DAL\obj\Debug\netcoreapp3.1\englishtotamil.DAL.AssemblyInfoInputs.cache
+C:\Users\karal\Downloads\webapp_englishtotamil\englishtotamil.DAL\obj\Debug\netcoreapp3.1\englishtotamil.DAL.AssemblyInfo.cs
+C:\Users\karal\Downloads\webapp_englishtotamil\englishtotamil.DAL\obj\Debug\netcoreapp3.1\englishtotamil.DAL.csproj.CoreCompileInputs.cache
+C:\Users\karal\Downloads\webapp_englishtotamil\englishtotamil.DAL\obj\Debug\netcoreapp3.1\englishtotamil.DAL.csproj.CopyComplete
+C:\Users\karal\Downloads\webapp_englishtotamil\englishtotamil.DAL\obj\Debug\netcoreapp3.1\englishtotamil.DAL.dll
+C:\Users\karal\Downloads\webapp_englishtotamil\englishtotamil.DAL\obj\Debug\netcoreapp3.1\englishtotamil.DAL.pdb

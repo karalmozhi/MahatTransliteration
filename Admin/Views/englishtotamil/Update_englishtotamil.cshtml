@@ -1,0 +1,179 @@
+
+			<!-- This code generated from Deliveries Powered by Mahat, Source Machine : 15.206.208.9 , Build Number : Build 14092021 #2021-09-014(Updated on 29102021 12:49) on 05/19/2023 09:20:14 -->
+			@using Microsoft.AspNetCore.Http
+			@inject IHttpContextAccessor HttpContextAccessor
+			@model englishtotamil.Models.englishtotamilModel
+			@{
+			ViewData["Title"] = "Update englishtotamil";
+
+			Layout = "~/Views/Shared/_Layout.cshtml";
+			
+			}
+
+			@using(Html.BeginForm("Update_englishtotamil", "englishtotamil", FormMethod.Post, new { enctype="multipart/form-data", @id = "formId"}))
+			{
+
+			<div class="card card-block contCard"><!--Form_Main_Card-->
+				<div class="mobileHeader"><!--form_card_header-->
+					<div class="row">
+						<div class="col-sm-12 col-xs-12">
+							<h4 class="formHdr">Update englishtotamil</h4>
+						</div>
+					</div>
+				</div><!--form_card_header-->
+				<!--form_error_display-->
+				@if(ViewData["message"] != null)
+				{
+				<div class="row">
+				<div class="col-sm-12 col-xs-12">
+				<div class="alert alert-danger alert-dismissible ">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">x</span>
+				</button>
+				Info :  @ViewData["message"]
+				</div>
+				</div>
+				</div>
+				}
+				
+				
+				 
+				
+				<!--form_error_display-->
+				<div class=""><!--form_inner_card-->
+					<div class="card-block"><!--form_inner_card_block-->
+					    @Html.HiddenFor(m => m.englishtotamilid)
+						 
+
+						
+						<div class="row"><!--field_container_row-->
+							<!--fieldsStartsHere-->
+								
+								<div class="col-sm-3 col-xs-12 p-2 enterthename_craftmyapp_container">
+						<div>
+							<div class="form-group" > 
+								<label>Enter the name</label>
+                                @Html.TextBoxFor(m => m.enterthename, new {@type="text",@maxlength="128", @class = "form-control form-control-lg " })
+
+							     @Html.ValidationMessageFor(model => model.enterthename)
+							</div>
+						</div>
+					</div>
+<div class="col-sm-3 col-xs-12 p-2 enterthetargetlanguage_craftmyapp_container">
+						<div>
+							<div class="form-group" > 
+								<label>Enter the targetlanguage</label>
+                                @Html.TextBoxFor(m => m.enterthetargetlanguage, new {@type="text",@maxlength="128", @class = "form-control form-control-lg " })
+
+							     @Html.ValidationMessageFor(model => model.enterthetargetlanguage)
+							</div>
+						</div>
+					</div>
+<div class="col-sm-3 col-xs-12 p-2 transliteratedtext_craftmyapp_container">
+						<div>
+							<div class="form-group" > 
+								<label>Transliterated text</label>
+                                @Html.TextBoxFor(m => m.transliteratedtext, new {@type="text",@maxlength="128", @class = "form-control form-control-lg " })
+
+							     @Html.ValidationMessageFor(model => model.transliteratedtext)
+							</div>
+						</div>
+					</div>
+
+
+							<!--fieldsEndsHere-->	
+						</div><!--field_container_row-->
+
+
+						<div class="card-block"><!--form_button_card_block-->
+							<button type="button" onclick="window.history.back()"  class="btn btn-secondary cma_cancel_button waves-effect">Cancel</button>
+							<button type="button" id="btnSubmit" class="btn cma_primary_button  waves-effect pull-right">Update englishtotamil</button>
+						</div><!--form_button_card_block-->
+
+
+					</div><!--form_inner_card_block-->
+				</div><!--form_inner_card-->
+			</div><!--Form_Main_Card-->
+
+			}<!--EndFORM-->
+
+
+			
+			 
+			 <script type="text/javascript">
+				$(document).ready(function () {
+
+
+				var Actions=getAutho("englishtotamil","edit")
+				if(Actions == undefined){
+				window.location = "@Url.Action("RoleAuthorizationFailed", "users")"
+				}
+
+
+				});
+				</script>
+			
+			
+			
+			
+			
+			
+			<script>
+			
+			 
+			</script>
+			<script>
+	$(document).ready(function () {
+		
+			$('#formId').validate({
+                                        highlight: function(element) {
+                                        $(element).closest('.form-group').addClass('has-error');
+                                        $(element).closest('.form-group').removeClass('has-success');
+                                        $(element).addClass('form-control-error');
+                                        $(element).removeClass('form-control-success');
+                                        },
+                                        unhighlight: function(element) {
+                                        $(element).closest('.form-group').removeClass('has-error');
+                                        $(element).closest('.form-group').addClass('has-success');
+                                        $(element).addClass('form-control-success');
+                                        $(element).removeClass('form-control-error');
+                                        },
+                                        errorElement: 'span',
+                                        errorClass: 'help-block'
+                                        });
+
+			    var validator = $("#formId").validate({ /* settings */ });
+                                            $("#btnSubmit").click(function(){
+                                                if ($("#formId").valid()){
+                                                        $(".page-loader").show()
+
+														
+                                                        $("#formId").submit();
+                                                }else{
+                                                    validator.focusInvalid();
+                                                    swal({
+                                                        title: 'Validation Failed!',
+                                                        text: "Please check your entry",
+                                                        type: 'error',
+                                                        buttonsStyling: false,
+                                                        confirmButtonClass: 'btn btn-primary'
+                                                    })
+                                                }
+                                            })
+
+
+                                        })
+
+	 
+	</script>
+
+			
+			
+            
+
+			
+			
+
+
+
+

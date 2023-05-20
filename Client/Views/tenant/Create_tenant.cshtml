@@ -1,0 +1,412 @@
+
+			<!-- This code generated from Deliveries Powered by Mahat, Source Machine : 15.206.208.9 , Build Number : Build 14092021 #2021-09-014(Updated on 29102021 12:49) on 05/19/2023 09:16:59 -->
+			@using Microsoft.AspNetCore.Http
+			@inject IHttpContextAccessor HttpContextAccessor
+			@model englishtotamil.Models.tenantModel
+			@{
+			ViewData["Title"] = "Create english to tamil";
+
+			Layout = "~/Views/Shared/_Layout.cshtml";
+			
+			}
+
+			@using(Html.BeginForm("Create_tenant", "tenant", FormMethod.Post, new { enctype="multipart/form-data", @id = "formId"}))
+			{
+
+			<div class="card card-block contCard"><!--Form_Main_Card-->
+				<div class="mobileHeader"><!--form_card_header-->
+					<div class="row">
+						<div class="col-sm-12 col-xs-12">
+							<h4 class="formHdr">Create english to tamil</h4>
+						</div>
+					</div>
+				</div><!--form_card_header-->
+				<!--form_error_display-->
+				@if(ViewData["message"] != null)
+				{
+				<div class="row">
+				<div class="col-sm-12 col-xs-12">
+				<div class="alert alert-danger alert-dismissible ">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">x</span>
+				</button>
+				Info :  @ViewData["message"]
+				</div>
+				</div>
+				</div>
+				}
+				
+				
+				 
+				
+				<!--form_error_display-->
+				<div class=""><!--form_inner_card-->
+					<div class="card-block"><!--form_inner_card_block-->
+					    @Html.HiddenFor(m => m.tenantid)
+						 
+
+						
+						<div class="row"><!--field_container_row-->
+							<!--fieldsStartsHere-->
+								
+								<div class="col-sm-4 col-xs-12 p-2 businessname_craftmyapp_container">
+						<div>
+							<div class="form-group" > 
+								<label>Business  Name <b class="iconRed">*</b></label>
+                                @Html.TextBoxFor(m => m.businessname, new {@type="text",@maxlength="50", @class = "form-control form-control-lg required" })
+
+							     @Html.ValidationMessageFor(model => model.businessname)
+							</div>
+						</div>
+					</div>
+<div class="col-sm-4 col-xs-12 p-2 businessemail_craftmyapp_container">
+						<div>
+							<div class="form-group" > 
+								<label>Business  Email <b class="iconRed">*</b></label>
+                                @Html.TextBoxFor(m => m.businessemail, new {@type="email",@maxlength="128", @class = "form-control form-control-lg required" })
+
+							     @Html.ValidationMessageFor(model => model.businessemail)
+							</div>
+						</div>
+					</div>
+<div class="col-sm-4 col-xs-12 p-2 businessphone_craftmyapp_container">
+						<div>
+							<div class="form-group" > 
+								<label>Business  Phone <b class="iconRed">*</b></label>
+                                @Html.TextBoxFor(m => m.businessphone, new {@type="text",@maxlength="20", @class = "form-control form-control-lg required" })
+
+							     @Html.ValidationMessageFor(model => model.businessphone)
+							</div>
+						</div>
+					</div>
+<div class="col-sm-4 col-xs-12 p-2 businesswebsite_craftmyapp_container">
+						<div>
+							<div class="form-group" > 
+								<label>Business  Website</label>
+                                @Html.TextBoxFor(m => m.businesswebsite, new {@type="url",@maxlength="256", @class = "form-control form-control-lg " })
+
+							     @Html.ValidationMessageFor(model => model.businesswebsite)
+							</div>
+						</div>
+					</div>
+<div class="col-sm-4 col-xs-12 p-2 organizationlogo_craftmyapp_container">
+								<div>
+									<div class="form-group form-group--float-above my-3" > 
+										<label>Organization  Logo</label>
+										<br><input type="file" multiple accept="image/*"  id="organizationlogo" name="organizationlogo">
+
+										<div id="organizationlogoDisp" href=""></div>
+										<i class="form-group__bar" ></i>
+									</div>
+									@Html.ValidationMessageFor(model => model.organizationlogo)
+									<label id="organizationlogo-error" class="help-block" style="display: none" for="organizationlogo"></label>
+								</div>
+							</div>
+<div class="col-sm-4 col-xs-12 p-2 numberofemployees_craftmyapp_container">
+						<div>
+							<div class="form-group" > 
+								<label>Number of  Employees</label>
+                                @Html.TextBoxFor(m => m.numberofemployees, new {@type="text",@min="0",@max="99999999", @class = "form-control form-control-lg " })
+
+							     @Html.ValidationMessageFor(model => model.numberofemployees)
+							</div>
+						</div>
+					</div>
+ 
+				<div class="col-sm-12 col-xs-12 mt-3"><!--form_group_div_block-->
+					<div class="card card-blue card-section cma_section_band">
+							<div class="card-head">
+								<header>Address</header>
+							</div>
+							<div class="card-body card-container-Padding-NoShadow">
+								<div class="row">
+										<div class="col-sm-4 col-xs-12 p-2 addressline1_craftmyapp_container">
+						<div>
+							<div class="form-group" > 
+								<label>Address Line1</label>
+                                @Html.TextBoxFor(m => m.addressline1, new {@type="text",@maxlength="256", @class = "form-control form-control-lg " })
+
+							     @Html.ValidationMessageFor(model => model.addressline1)
+							</div>
+						</div>
+					</div>
+<div class="col-sm-4 col-xs-12 p-2 addressline2_craftmyapp_container">
+						<div>
+							<div class="form-group" > 
+								<label>Address Line2</label>
+                                @Html.TextBoxFor(m => m.addressline2, new {@type="text",@maxlength="256", @class = "form-control form-control-lg " })
+
+							     @Html.ValidationMessageFor(model => model.addressline2)
+							</div>
+						</div>
+					</div>
+<div class="col-sm-4 col-xs-12 p-2 city_craftmyapp_container">
+						<div>
+							<div class="form-group" > 
+								<label>City</label>
+                                @Html.TextBoxFor(m => m.city, new {@type="text",@maxlength="256", @class = "form-control form-control-lg " })
+
+							     @Html.ValidationMessageFor(model => model.city)
+							</div>
+						</div>
+					</div>
+<div class="col-sm-4 col-xs-12 p-2 state_craftmyapp_container">
+						<div>
+							<div class="form-group" > 
+								<label>State</label>
+                                @Html.TextBoxFor(m => m.state, new {@type="text",@maxlength="256", @class = "form-control form-control-lg " })
+
+							     @Html.ValidationMessageFor(model => model.state)
+							</div>
+						</div>
+					</div>
+<div class="col-sm-4 col-xs-12 p-2 zip_craftmyapp_container">
+						<div>
+							<div class="form-group" > 
+								<label>Zip</label>
+                                @Html.TextBoxFor(m => m.zip, new {@type="text",@maxlength="256", @class = "form-control form-control-lg " })
+
+							     @Html.ValidationMessageFor(model => model.zip)
+							</div>
+						</div>
+					</div>
+<div class="col-sm-4 col-xs-12 p-2 country_craftmyapp_container">
+								<div>
+									<div class="form-group form-group--float-above my-3" > 
+										<label>Country</label>
+										<select name="country" id="country" class="form-control  "></select>
+
+									</div>
+									@Html.ValidationMessageFor(model => model.country)
+									<label id="country-error" class="help-block" style="display: none" for="country"></label>
+								</div>
+							</div>
+
+
+								</div>
+							</div>
+					</div>
+				</div><!--form_group_div_block-->
+			 
+
+
+							<!--fieldsEndsHere-->	
+						</div><!--field_container_row-->
+
+
+						<div class="card-block"><!--form_button_card_block-->
+							<button type="button" onclick="window.history.back()"  class="btn btn-secondary cma_cancel_button waves-effect">Cancel</button>
+							<button type="button" id="btnSubmit" class="btn cma_primary_button  waves-effect pull-right">Create english to tamil</button>
+						</div><!--form_button_card_block-->
+
+
+					</div><!--form_inner_card_block-->
+				</div><!--form_inner_card-->
+			</div><!--Form_Main_Card-->
+
+			}<!--EndFORM-->
+
+
+			
+			 
+			 <script type="text/javascript">
+				$(document).ready(function () {
+
+
+				var Actions=getAutho("tenant","create")
+				if(Actions == undefined){
+				window.location = "@Url.Action("RoleAuthorizationFailed", "users")"
+				}
+
+
+				});
+				</script>
+			
+			<script>
+var strorganizationlogo;
+</script>
+@if (Model != null)
+{
+if(Model.organizationlogo != null && Model.organizationlogo.ToString() != "")
+{
+<script>
+var uploaded_organizationlogo = "@Model.organizationlogo".split('|');
+                                            var iterate = 0;
+                                            for (var i = 0; i < uploaded_organizationlogo.length; i++) {
+
+
+	                                            if (uploaded_organizationlogo[i] != "") {
+		                                            iterate = iterate + 1;
+		                                            if (iterate == 1)
+			                                            $('#organizationlogoDisp').append('<a href=' + uploaded_organizationlogo[i] + ' class="imgorganizationlogo auto_clr_photo"><img  src=' + uploaded_organizationlogo[i] + ' width="100px" /></a>')
+		                                            else
+
+			                                            $('#organizationlogoDisp').append('<div style="display:none"> <a href=' + uploaded_organizationlogo[i] + ' class="imgorganizationlogo auto_clr_photo"><img  src=' + uploaded_organizationlogo[i] + ' width="100px" /></a></div>')
+		 
+	                                            }
+
+
+                                            }
+$('body').on('click', 'a.imgorganizationlogo', function (e) {
+                            e.preventDefault();
+                            $('.imgorganizationlogo').colorbox({ rel: '.imgorganizationlogo', width: "90%", height: "80%" });
+                            $.colorbox({ open: true });
+                            });
+</script>
+}
+}
+<link href="~/components/jquery-colorbox/colorbox.css" rel="stylesheet" />
+								<script src="~/components/jquery-colorbox/jquery.colorbox.js"></script> 
+<script>
+$(document).ready(function () {
+$("#numberofemployees").autoNumeric('init',{aSep: '',vMin: '0',vMax: '99999999'})
+})
+</script>
+<script>
+var strcountry;
+</script>
+@if (Model != null)
+{
+if(Model.country != null && Model.country.ToString() != "")
+{
+<script>
+strcountry="@Model.country"
+</script>
+}
+}
+
+			<script>
+$(document).ready(function () {
+
+$.ajax({
+url: '@Url.Action("get_lookups_by_entity","lookups")',
+dataType: 'json',
+data:{id: 'tenant' },
+success: function(data) {
+
+
+
+		$.each(data, function(index, optionDataInner) {
+
+				
+											if(optionDataInner.fieldname=="country"){
+												var ddltarget_country = "#country"
+												$(ddltarget_country).empty();
+												$(ddltarget_country).append("<option value=''>Choose</option>")
+												var options_country = optionDataInner.fielddesc.split(',');
+												options_country.forEach(function(option_country){
+													if(strcountry== option_country)
+													$(ddltarget_country).append('<option selected value="' + option_country + '">' + option_country+ '</option>')
+													else
+													$(ddltarget_country).append('<option  value="' + option_country + '">' + option_country+ '</option>')
+												
+												})  
+
+											}
+
+
+
+		});
+
+
+},
+error: function(jqXHR, textStatus, errorThrown) {
+if (JSON.stringify(jqXHR.responseText) == "\"API Authorization failed\"")
+{
+swal({
+title: 'Failed!',
+text: jqXHR.responseText,
+type: 'error',
+buttonsStyling: false,
+confirmButtonClass: 'btn btn-primary',
+allowOutsideClick: false
+}).then(function() {
+window.location = "@Url.Action("AuthorizationFailed", "users")"
+}) 
+}
+else
+{
+swal({
+title: 'Contact Administrator !',
+text: jqXHR.responseText,
+type: 'error',
+buttonsStyling: false,
+confirmButtonClass: 'btn btn-primary'
+}) 
+}
+}
+})
+})
+</script>
+			
+			
+			
+			<script>
+			
+			 
+			</script>
+			<script>
+	$(document).ready(function () {
+		
+			$('#formId').validate({
+                                        highlight: function(element) {
+                                        $(element).closest('.form-group').addClass('has-error');
+                                        $(element).closest('.form-group').removeClass('has-success');
+                                        $(element).addClass('form-control-error');
+                                        $(element).removeClass('form-control-success');
+                                        },
+                                        unhighlight: function(element) {
+                                        $(element).closest('.form-group').removeClass('has-error');
+                                        $(element).closest('.form-group').addClass('has-success');
+                                        $(element).addClass('form-control-success');
+                                        $(element).removeClass('form-control-error');
+                                        },
+                                        errorElement: 'span',
+                                        errorClass: 'help-block'
+                                        });
+
+			    var validator = $("#formId").validate({ /* settings */ });
+                                            $("#btnSubmit").click(function(){
+                                                if ($("#formId").valid()){
+                                                        $(".page-loader").show()
+
+														
+                                                        $("#formId").submit();
+                                                }else{
+                                                    validator.focusInvalid();
+                                                    swal({
+                                                        title: 'Validation Failed!',
+                                                        text: "Please check your entry",
+                                                        type: 'error',
+                                                        buttonsStyling: false,
+                                                        confirmButtonClass: 'btn btn-primary'
+                                                    })
+                                                }
+                                            })
+
+
+                                        })
+
+	 
+	</script>
+
+			
+			
+            
+
+			
+			
+<script>
+					$(document).ready(function () {
+						 
+						$("#tenantid").change(function(){
+								 
+						})
+					
+
+					});
+					</script>
+
+
+
+
